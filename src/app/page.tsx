@@ -23,7 +23,7 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
-        <h1>Así esta bien</h1>
+        <h1>Así esta bien!</h1>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
