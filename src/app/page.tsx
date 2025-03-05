@@ -1,103 +1,42 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <h1>Así esta bien</h1>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <main>
+      <div>
+        <section className="min-h-screen relative flex flex-col">
+          <img className="h-full w-full" src="https://klbtheme.com/clotya/wp-content/uploads/2022/05/slider-04.jpg" alt="" />
+          <div className="absolute text-black flex flex-col gap-8 py-20 pl-10">
+            <p className="text-xs font-semibold">WINTER 2022 COLLECTION</p>
+            <h2 className="text-7xl font-light">Valentin Paul <br /> Essential Collection</h2>
+            <p className="text-[#75767c]">Última colección de verano.</p>
+            <a>
+              Mirar Colección
+            </a>
+          </div>
+        </section>
+      </div>
+      
+      <section className="flex justify-between py-20 px-10 bg-black">
+        <div className="flex flex-col gap-10 w-2/5">
+          <div>
+            <h3 className="text-white text-3xl font-medium pb-2">Get our emails for info on <br /> new items, sales and more.</h3>
+            <p className="text-[#75767c]">Well email you a voucher worth £10 off your first order over £50.</p>
+          </div>
+          <div>
+            <form className="pb-2">
+              <input className="w-3/4 px-2 py-2 border-y border-l border-[#ddd] focus:outline-none" type="text" name="" id="" placeholder="tucorreo@gmail.com"/>
+              <button className="w-1/4 text-white font-medium px-6 py-2 border border-[#75767c] rounded-sm">Suscribirse</button>
+            </form>
+            <p className="text-xs text-[#75767c]">By subscribing you agree to our Terms & Conditions and Privacy & Cookies Policy.</p>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="flex flex-col gap-10 w-2/5">
+          <div>
+            <h3 className="text-white text-3xl font-medium pb-2">Need help? <br /> (+800) 1234 5678 90</h3>
+            <p className="text-[#75767c] font-medium">We are available 8:00am – 7:00pm</p>
+          </div>
+          <p className="text-xs text-[#75767c]">Shopping App: Try our View in Your Room feature, manage registries and save payment info.</p>
+        </div>
+      </section>
+    </main>
   );
 }

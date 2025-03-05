@@ -27,7 +27,120 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <header>
+          <section>
+            <p className="py-3 text-center bg-[#1a4845] text-white text-xs">SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY - OFF 50%! SHOP NOW</p>
+          </section>
+          <section className="flex justify-between items-center gap-4 max-w-screen-xl h-20 m-auto">
+            <div className="w-36">
+              <img src="https://klbtheme.com/clotya/wp-content/uploads/2022/04/logo.png" alt="" />
+            </div>
+            <nav className="flex w-3/5">
+              <ul className="flex justify-evenly w-full text-transfor: uppercase font-medium">
+                <li><a href="#">Polos</a></li>
+                <li><a href="#">Pantalones</a></li>
+                <li><a href="#">Gorras</a></li>
+                <li><a href="#">Outlet</a></li>
+              </ul>
+            </nav>
+
+            <div className="flex w-1/5 justify-evenly">
+              <div>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#000000"} fill={"none"}>
+                    <path d="M12 14.0466C9.7927 13.8404 7.53058 14.3187 5.57757 15.4816C4.1628 16.324 0.453365 18.0441 2.71266 20.1966C3.81631 21.248 5.04549 22 6.59087 22H13" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M15.5 6.5C15.5 8.98528 13.4853 11 11 11C8.51472 11 6.5 8.98528 6.5 6.5C6.5 4.01472 8.51472 2 11 2C13.4853 2 15.5 4.01472 15.5 6.5Z" stroke="currentColor" strokeWidth="1.5" />
+                    <path d="M22 17.5V15C20 15 18.5 14 18.5 14C18.5 14 17 15 15 15V17.5C15 21 18.5 22 18.5 22C18.5 22 22 21 22 17.5Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#000000"} fill={"none"}>
+                    <path d="M17.5 17.5L22 22" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M20 11C20 6.02944 15.9706 2 11 2C6.02944 2 2 6.02944 2 11C2 15.9706 6.02944 20 11 20C15.9706 20 20 15.9706 20 11Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#000000"} fill={"none"}>
+                    <path d="M19.4626 3.99415C16.7809 2.34923 14.4404 3.01211 13.0344 4.06801C12.4578 4.50096 12.1696 4.71743 12 4.71743C11.8304 4.71743 11.5422 4.50096 10.9656 4.06801C9.55962 3.01211 7.21909 2.34923 4.53744 3.99415C1.01807 6.15294 0.221721 13.2749 8.33953 19.2834C9.88572 20.4278 10.6588 21 12 21C13.3412 21 14.1143 20.4278 15.6605 19.2834C23.7783 13.2749 22.9819 6.15294 19.4626 3.99415Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                </a>
+              </div>
+              <div>
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width={24} height={24} color={"#000000"} fill={"none"}>
+                    <path d="M8 16L16.7201 15.2733C19.4486 15.046 20.0611 14.45 20.3635 11.7289L21 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M6 6H7M22 6H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M10.515 2.38661C11.5876 1.74692 12.5238 2.00471 13.0863 2.41534C13.3169 2.58371 13.4322 2.66789 13.5 2.66789C13.5678 2.66789 13.6831 2.58371 13.9137 2.41534C14.4762 2.00471 15.4124 1.74692 16.485 2.38661C17.8928 3.22614 18.2113 5.99578 14.9642 8.33242C14.3457 8.77747 14.0365 9 13.5 9C12.9635 9 12.6543 8.77747 12.0358 8.33242C8.78869 5.99578 9.10723 3.22614 10.515 2.38661Z" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    <circle cx="6" cy="20" r="2" stroke="currentColor" strokeWidth="1.5" />
+                    <circle cx="17" cy="20" r="2" stroke="currentColor" strokeWidth="1.5" />
+                    <path d="M8 20L15 20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                    <path d="M2 2H2.966C3.91068 2 4.73414 2.62459 4.96326 3.51493L7.93852 15.0765C8.08887 15.6608 7.9602 16.2797 7.58824 16.7616L6.63213 18" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </section>
+        </header>
         {children}
+        <footer className="flex flex-col gap-4 max-w-screen-xl m-auto">
+          <section className="flex justify-between py-10 border-[#dee0ea] border-b-2">
+            <div className="flex flex-col gap-4 w-1/5">
+              <div className="w-36">
+                <img src="https://klbtheme.com/clotya/wp-content/uploads/2022/04/logo.png" alt="" />
+              </div>
+              <p className="text-sm">Possimus rerum perferendis illo accusantium exercitationem rem dolore quod, suscipit consectetur natus dolorem? Incidunt quis et ducimus illo omnis illum nesciunt harum?</p>
+              <p className="text-sm">(+800) 1234 5678 90 – info@example.com</p>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h4><strong>Información</strong></h4>
+              <div className="flex flex-col gap-2">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Política de Datos Personales</a>
+                <a href="#">Política de Devolución</a>
+                <a href="#">Política de Envío</a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h4><strong>Mi Cuenta</strong></h4>
+              <div className="flex flex-col gap-2">
+                <a href="#">Dashboard</a>
+                <a href="#">Mis Ordenes</a>
+                <a href="#">Mis Favoritos</a>
+                <a href="#">Rastrea tu Pedido</a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h3><strong>Tienda</strong></h3>
+              <div className="flex flex-col gap-2">
+                <a href="#">Nueva Colección</a>
+                <a href="#">Más Vendidos</a>
+                <a href="#">En Liquidación</a>
+                <a href="#">Packs Promotions</a>
+              </div>
+            </div>
+            <div className="flex flex-col gap-4">
+              <h4><strong>Categorías</strong></h4>
+              <div className="flex flex-col gap-2">
+                <a href="#">Polos</a>
+                <a href="#">Pantalones</a>
+                <a href="#">Gorras</a>
+                <a href="#">Casacas</a>
+              </div>
+            </div>
+          </section>
+          <section className="flex justify-between py-6">
+            <div>
+              <p>Copyright 2025 ©. All right reserved. Powered by SpageDev.</p>
+            </div>
+            <div>
+              <img src="https://klbtheme.com/clotya/wp-content/uploads/2022/06/cards.png" alt="" />
+            </div>
+          </section>
+        </footer>
       </body>
     </html>
   );
