@@ -1,0 +1,24 @@
+name: Auto Assign Reviewers
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  add-reviewers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto-assign reviewer
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const reviewers = ["PedroVegaDamian"]; // Cambia esto con los nombres de usuario de GitHub
+            const { owner, repo, number } = context.issue;
+
+            await github.rest.pulls.requestReviewers({
+              owner,
+              repo,
+              pull_number: number,
+              reviewers
+            });
